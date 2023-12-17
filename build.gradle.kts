@@ -20,12 +20,15 @@ val protobufVersion = "3.24.0"
 val protocVersion = protobufVersion
 
 dependencies {
-    implementation("io.grpc:grpc-protobuf:${grpcVersion}")
-    implementation("io.grpc:grpc-services:${grpcVersion}")
-    implementation("io.grpc:grpc-stub:${grpcVersion}")
+    implementation("io.grpc:grpc-protobuf:$grpcVersion")
+    implementation("io.grpc:grpc-services:$grpcVersion")
+    implementation("io.grpc:grpc-stub:$grpcVersion")
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.0")
+
     compileOnly("org.apache.tomcat:annotations-api:6.0.53")
 
-    runtimeOnly("io.grpc:grpc-netty-shaded:${grpcVersion}")
+    runtimeOnly("io.grpc:grpc-netty-shaded:$grpcVersion")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")

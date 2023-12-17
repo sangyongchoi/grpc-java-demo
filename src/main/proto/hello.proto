@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package lazy.conference.grpcdemo.proto;
 
-option java_outer_classname = "Karol";
 option java_multiple_files = true;
 
 service HelloService {
